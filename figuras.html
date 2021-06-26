@@ -7,7 +7,68 @@
     <title>figuras geometricas</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+    <header>
+        <h1>Figuras geometricas</h1>
+    </header>
+    
+    <section>
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="inputCuadrado">
+                escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="inputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular area</button>
+            
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el area y perimetro de un triangulo</h2>
+        <form action="">
+            <span>escribe cuanto mide cada lado de tu triangulo: </span><br>
+            <label for="inputLadoA">
+                Lado <b>a</b>
+            </label>
+            <input id="inputLadoA" type="number"><br>
+            <label for="inputLadoB">
+                Lado <b>b</b>
+            </label>
+            <input id="inputLadoB" type="number"><br>
+            <label for="inputLadoC">
+                Lado <b>c</b>
+            </label>
+            <input id="inputLadoC" type="number"><br>
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button><br>
+            
+            <span><b>Calcular area</b></span><br>
+
+            <label for="inputBase">
+                Digite la  <b>Base</b>
+            </label>
+            <input id="inputBase" type="number"><br>
+            <label for="inputAltura">
+                Digite la <b>altura</b>
+            </label>
+            <input id="inputAltura" type="number"><br>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+            
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el diametro,perimetro y area de un circulo</h2>
+        <form action="">
+            <label for="inputRadio">
+                escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="inputRadio" type="number"><br>
+            <button type="button" onclick="calcularDiametroCirculo()">Calcular diametro</button>
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular area</button>
+            
+        </form>
+    </section>
 
     <script src="./figuras.js"></script>
 </body>
